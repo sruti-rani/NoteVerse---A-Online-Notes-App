@@ -1,0 +1,168 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Container styles */
+.auth-container, .notes-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Header and title */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Login & Register Styles */
+.auth-container {
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+input[type="text"], input[type="password"] {
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Notes Styles */
+.notes-container {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.note {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.note .tool {
+  text-align: right;
+}
+
+.note button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+
+.note button:hover {
+  background-color: #e64a19;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .auth-container,
+body.dark .notes-container {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark button {
+  background-color: #1e88e5;
+}
+
+body.dark button:hover {
+  background-color: #1565c0;
+}
+
+body.dark .note {
+  background-color: #424242;
+  color: #e0e0e0;
+}
+
+body.dark .note button {
+  background-color: #ff7043;
+}
+
+body.dark .note button:hover {
+  background-color: #f4511e;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#themeToggle:hover {
+  background-color: #f1f1f1;
+}
+
+#themeToggle:focus {
+  outline: none;
+}
